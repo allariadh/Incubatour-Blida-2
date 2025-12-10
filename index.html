@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./image/11zon_cropped.png" class="icon">
+    <title>حاضنة جامعة البليدة 2</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="حاضنة جامعة البليدة 2 تقدم خدمات احتضان مجانية 100% للطلبة والخريجين، مساحات عمل، تكوين، مرافقة، ربط بالمستثمرين.">
+
+    <!-- Bootstrap 5 RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Fonts - Tajawal -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #D2763B;
+            --secondary: #5B005A;
+            --light: #f8f9fa;
+            --dark: #212529;
+        }
+        body {font-family:'Tajawal',sans-serif; background:#fafafa; transition:all 0.4s;}
+        body.dark-mode {background:#121212; color:#e0e0e0;}
+        .dark-mode .bg-light,.dark-mode .card,.dark-mode .navbar {background:#1e1e1e !important;}
+        .dark-mode .text-dark {color:#e0e0e0 !important;}
+        .dark-mode .form-control {background:#2c2c2c; color:#e0e0e0; border-color:#444;}
+
+        /* Navbar */
+        .navbar.sticky-top {background:rgba(255,255,255,0.95); backdrop-filter:blur(10px); box-shadow:0 2px 15px rgba(0,0,0,0.1);}
+        .navbar-brand img {height:70px;}
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(rgba(91,0,90,0.88), rgba(210,118,59,0.88)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80') center/cover no-repeat;
+            min-height:100vh; color:white; display:flex; align-items:center;
+        }
+        .hero h1 {font-size:4rem; font-weight:900;}
+        .hero .btn {border-radius:50px; padding:15px 50px; font-size:1.5rem;}
+
+        /* General */
+        .section-title {color:var(--secondary);}
+        .icon-box {width:90px; height:90px; background:linear-gradient(135deg,var(--primary),var(--secondary)); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2.5rem; color:white;}
+        .card {border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.1); transition:all 0.4s; border:none;}
+        .card:hover {transform:translateY(-15px);}
+
+        /* Pricing */
+        .pricing-badge {position:absolute; top:-15px; right:-15px; background:linear-gradient(135deg,var(--primary),var(--secondary)); color:white; padding:12px 25px; border-radius:50px; font-weight:900; box-shadow:0 8px 20px rgba(0,0,0,0.3);}
+        .free-badge {background:#28a745; color:white; padding:10px 30px; border-radius:50px; font-weight:bold;}
+
+        /* Accordion */
+        .accordion-button {font-weight:700; color:var(--secondary);}
+        .accordion-button:not(.collapsed) {background:linear-gradient(135deg,var(--primary),var(--secondary)); color:white !important;}
+
+        footer {background:linear-gradient(135deg,var(--secondary),var(--primary)); color:white;}
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="./image/incub.jpg" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">خدماتنا</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">التكوينات</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faq">الأسئلة الشائعة</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">اتصل بنا</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-primary  " href="#register">سجل الآن</a></li>
+                <li class="nav-item"><button id="darkModeToggle" class="btn btn-outline-secondary"><i class="fas fa-moon"></i></button></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero text-center">
+    <div class="container">
+        <h1 class="display-3 fw-bold mb-4">حاضنة جامعة البليدة 2</h1>
+        <p class="lead fs-2 mb-5">فضاء الابتكار، الريادة، وصناعة المشاريع الجامعية</p>
+        <a href="#register" class="btn btn-warning btn-lg text-white px-5 py-3">سجل مشروعك الآن</a>
+    </div>
+</section>
+
+<!-- Features -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3 mb-4"><div class="icon-box"><i class="fas fa-lightbulb"></i></div><h4 class="fet">دعم المشاريع</h4></div>
+            <div class="col-md-3 mb-4"><div class="icon-box"><i class="fas fa-users"></i></div><h4 class="fet">مرافقة الطلبة</h4></div>
+            <div class="col-md-3 mb-4"><div class="icon-box"><i class="fas fa-graduation-cap"></i></div><h4 class="fet">برامج التكوين</h4></div>
+            <div class="col-md-3 mb-4"><div class="icon-box"><i class="fas fa-handshake"></i></div><h4 class="fet">شركاء الحاضنة</h4></div>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center section-title mb-5">عن الحاضنة</h2>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <p class="lead">نحن فضاء مخصص لاحتضان وتطوير الأفكار الريادية لطلبة الماستر 2 والثالثة ليسانس ، و لتحويل المشاريع الجامعية إلى شركات ناشئة ناجحة مستقبلية.</p>
+                <p><strong>رؤيتنا:</strong> أن نكون المحرك الرئيسي للريادة الجامعية في الجزائر.</p>
+                <p><strong>مهمتنا:</strong> دعم الطلبة في تحويل أفكارهم إلى مشاريع ناجحة من خلال التكوين والمرافقة والتحفيز.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="./image/photo one.png" class="img-fluid rounded shadow" alt="Incubator">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center section-title mb-5">خدماتنا</h2>
+        <div class="row g-5">
+            <div class="col-lg-4"><div class="card h-100 text-center p-4"><div class="icon-box mb-3"><i class="fas fa-lightbulb"></i></div><h4>دعم تطوير الأفكار</h4></div></div>
+            <div class="col-lg-4"><div class="card h-100 text-center p-4"><div class="icon-box mb-3"><i class="fas fa-project-diagram"></i></div><h4>نموذج العمل التجاري</h4></div></div>
+            <div class="col-lg-4"><div class="card h-100 text-center p-4"><div class="icon-box mb-3"><i class="fas fa-chalkboard-teacher"></i></div><h4>تكوينات ريادة الأعمال</h4></div></div>
+            <div class="col-lg-4"><div class="card h-100 text-center p-4"><div class="icon-box mb-3"><i class="fas fa-user-tie"></i></div><h4>مرشدين وخبراء</h4></div></div>
+            <div class="col-lg-4"><div class="card h-100 text-center p-4"><div class="icon-box mb-3"><i class="fas fa-building"></i></div><h4>مساحات عمل ومختبرات</h4></div></div>
+            <div class="col-lg-4"><div class="card h-100 text-center p-4"><div class="icon-box mb-3"><i class="fas fa-handshake"></i></div><h4>ربط بالمستثمرين</h4></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Number of project  -->
+
+      <section class="about-summary section-padding bg-light">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-text">
+              <p>تسعى حاضنة جامعة البليدة 2 إلى غرس ثقافة المقاولاتية لدى الطلبة ومرافقتهم في إنشاء مؤسساتهم الناشئة، من
+                خلال توفير بيئة محفزة وبرامج تكوينية متخصصة.</p>
+            </div>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span class="stat-number">150+</span>
+                <span class="stat-label">مشروع ناشئ</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">40+</span>
+                <span class="stat-label">مشاريع متحصلة على لابل </span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">200+</span>
+                <span class="stat-label">طالب مكون</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- Projects (Sample) -->
+<section id="projects" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center section-title mb-5">بعض التكوينات الخاصة بالحاضنة</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4"><div class="card"><img src="./image/training 4.jpg" class="card-img-top" alt=""><div class="card-body"><h5> تكوينات في التسويق الإلكتروني</h5></div></div></div>
+            <div class="col-md-4 mb-4"><div class="card"><img src="./image/training 3.jpg" class="card-img-top" alt=""><div class="card-body"><h5> تكوينات في المحاسبة</h5></div></div></div>
+            <div class="col-md-4 mb-4"><div class="card"><img src="./image/training 4 (1).jpg" class="card-img-top" alt=""><div class="card-body"><h5>تكوينات في أساسيات التسويق  </h5></div></div></div>
+            <div class="col-md-4 mb-4"><div class="card"><img src="./image/training two.jpg" class="card-img-top" alt=""><div class="card-body"><h5>  تكوينات في برمجة النموذج الأولى</h5></div></div></div>
+            <div class="col-md-4 mb-4"><div class="card"><img src="./image/training 1.jpg" class="card-img-top" alt=""><div class="card-body"><h5> تكوينات في مهارات الناعمة</h5></div></div></div>
+            <div class="col-md-4 mb-4"><div class="card"><img src="./image/training 6.jpg" class="card-img-top" alt=""><div class="card-body"><h5> تكوينات في التسويق الإستراتيحي</h5></div></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-5">
+    <div class="container">
+        <h2 class="text-center section-title mb-5">الأسئلة الشائعة</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">من يمكنه التقديم؟</button></h2><div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">جميع طلبة جامعة البليدة 2 المقبلين على التخرج السنة الثالثة ليسانس و ماستر 2 .</div></div></div>
+            <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">هل يمكن أن يكون فريقي مكون أكثر من طالبين؟ </button></h2><div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">نعم يمكن أن يحتوي الفريق أكثر من طاليبين </div></div></div>
+            <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">كيفية التسجيل؟ </button></h2><div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">بعد التسجيل في الإستمارة الموجودة أسفل الموقع ، ستعرض مشروعك أمام لجنة الإنتقاء لإختيار مشروعك ضمن الحاضنة </div></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center section-title mb-5">اتصل بنا</h2>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="info-box text-center p-4 text-white rounded" style="background:linear-gradient(135deg,var(--primary),var(--secondary));">
+                    <i class="fas fa-map-marker-alt fs-1"></i><h5>العنوان</h5><p>جامعة البليدة2 لونيسي علي، طريق العفرون</p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="info-box text-center p-4 text-white rounded" style="background:linear-gradient(135deg,var(--primary),var(--secondary));">
+                    <i class="fas fa-phone fs-1"></i><h5>الهاتف</h5><p dir="ltr">06 63 90 93 34</p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="info-box text-center p-4 text-white rounded" style="background:linear-gradient(135deg,var(--primary),var(--secondary));">
+                    <i class="fas fa-envelope fs-1"></i><h5>البريد</h5><p>incubator@univ-blida2.dz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Registration Form -->
+<section id="register" class="py-5">
+    <div class="container">
+        <h2 class="text-center section-title mb-5">سجل مشروعك الآن</h2>
+        <div class="card mx-auto" style="max-width:900px;">
+            <div class="card-body p-5">
+                <form id="registerForm">
+                    <div class="row g-4">
+                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="الاسم الكامل" required></div>
+                        <div class="col-md-6"><input type="email" class="form-control form-control-lg" placeholder="البريد الإلكتروني" required></div>
+                        <div class="col-md-6"><input type="tel" class="form-control form-control-lg" placeholder="رقم الهاتف" required></div>
+                        <div class="col-md-6">
+                            <select class="form-select form-select-lg" required>
+                                <option value=""> سنة الجامعية</option>
+                                <option> السنة الثالثة ليسانس</option>
+                                <option> الماستر 2 </option>
+                            </select>
+                        </div>
+                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="الكلية"required></div>
+                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="التخصص"required></div>
+                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="الأستاذ المشرف" required></div>
+                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="الأستاذ المساعد إن وجد" ></div>
+                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="الإسم الكامل لطالب الثاني إن وجد" ></div>
+                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="الإسم الكامل لطالب الثالث إن وجد" ></div>
+                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="الإسم الكامل لطالب الرابع إن وجد" ></div>
+                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="الإسم الكامل لطالب الخامس إن وجد" ></div>
+                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="اسم المشروع" required></div>
+                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="مجال المشروع" required></div>
+                        <div class="col-12"><textarea class="form-control form-control-lg" rows="5" placeholder="وصف المشروع" required></textarea></div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-primary btn-lg px-5" style="background:linear-gradient(135deg,var(--primary),var(--secondary)); border:none;">
+                                إرسال الطلب
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div id="successMsg" class="alert alert-success text-center fs-4 mt-4" style="display:none;">
+                    شكراً! تم استلام طلبك وسيتم التواصل معك قريباً.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6"><h5>حاضنة جامعة البليدة 2</h5><p>جامعة البليدة2 لونيسي علي، طريق العفرون</p></div>
+            <div class="col-md-6 text-md-start text-center">
+                <p dir="ltr">incubator@univ-blida2.dz<br>0663 90 93 34</p>
+                <a href="https://web.facebook.com/profile.php?id=61576266865958" target="_blank" class="text-white mx-2"><i class="fab fa-facebook fs-3"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram fs-3"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin fs-3"></i></a>
+            </div>
+        </div>
+        <hr>
+        <p class="text-center mb-0">© 2025 حاضنة جامعة البليدة 2 - جميع الحقوق محفوظة</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Dark Mode
+    const toggle = document.getElementById('darkModeToggle');
+    if (localStorage.getItem('darkMode')==='enabled') {
+        document.body.classList.add('dark-mode');
+        toggle.querySelector('i').classList.replace('fa-moon','fa-sun');
+    }
+    toggle.addEventListener('click',()=>{
+        document.body.classList.toggle('dark-mode');
+        const icon = toggle.querySelector('i');
+        icon.classList.toggle('fa-moon'); icon.classList.toggle('fa-sun');
+        localStorage.setItem('darkMode', document.body.classList.contains('dark-mode')?'enabled':'disabled');
+    });
+
+    // Registration Success
+    document.getElementById('registerForm').addEventListener('submit', function(e){
+        e.preventDefault();
+        this.style.display='none';
+        document.getElementById('successMsg').style.display='block';
+    });
+</script>
+</body>
+</html>

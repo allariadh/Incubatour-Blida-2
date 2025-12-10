@@ -1,0 +1,114 @@
+
+        :root {
+            --primary: #D2763B;
+            --secondary: #5B005A;
+            --light: #f8f9fa;
+            --dark: #212529;
+        }
+        .icon{
+            border-radius: 50%;
+        }
+        body {
+            font-family:'Tajawal',sans-serif;
+             background:#fafafa;
+            transition:all 0.4s;
+        }
+        body.dark-mode {
+            background:#121212;
+            color:#e0e0e0;
+        }
+        .dark-mode .bg-light,.dark-mode .card,.dark-mode .navbar 
+        {background:#1e1e1e !important;
+        }
+        .dark-mode .text-dark 
+        {color:#e0e0e0 !important;
+        }
+        .dark-mode .form-control {
+        background:#2c2c2c; 
+        color:#e0e0e0; 
+        border-color:#444;
+        }
+
+        /* Navbar */
+        .nav-item{margin-left:20px; margin-right:20px;font-weight: 500;}
+        .nav-link.btn-primary:hover {
+            background-color: #5B005A !important;
+            border-color: #5B005A !important;
+            color:white;
+            border-radius: 10px;
+        }
+        .navbar.sticky-top {background:rgba(255,255,255,0.95); backdrop-filter:blur(10px); box-shadow:0 2px 15px rgba(0,0,0,0.1);}
+        .navbar-brand img {height:70px;}
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(rgba(91,0,90,0.88), rgba(210,118,59,0.88)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80') center/cover no-repeat;
+            min-height:100vh; color:white; display:flex; align-items:center;
+        }
+        .hero h1 {font-size:4rem; font-weight:900;}
+        .hero .btn {border-radius:50px; padding:15px 50px; font-size:1.5rem;}
+
+        /*Features*/
+        .fet {margin-top:15px; font-weight:700; color:var(--dark);}
+        .icon-box{margin:auto; margin-bottom:10px;}
+
+        /*About*/
+        .about-img {border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.1);}
+        h2.section-title {font-size:2.5rem; font-weight:900; margin-bottom:30px;}
+        p.lead {font-size:1.8rem;  color:var(--dark); padding-bottom: 50px; text-align: center; font-weight: 400;}
+
+        /* Services */
+        .service-icon {font-size:3rem; color:var(--primary); margin-bottom:15px;}
+        .service-card {border-radius:90px; box-shadow:0 10px 30px rgba(0,0,0,0.1); transition:all 0.4s; border:none; padding:30px;}
+        /* General */
+        .section-title {color:var(--secondary);}
+        .icon-box {width:90px; height:90px; background:linear-gradient(135deg,var(--primary),var(--secondary)); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2.5rem; color:white;}
+        .card {border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.1); transition:all 0.4s; border:none;}
+        .card:hover {transform:translateY(-15px);}
+
+        /* Number of project */
+            .bg-light {
+            background-color: var(--gray-100);
+            }
+
+            .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            }
+            .about-text{
+                font-size:1.5rem;  color:var(--dark); padding-bottom: 50px; text-align: center; font-weight: 400;
+            }
+            .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            }
+
+            .stat-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            }
+
+            .stat-number {
+            display: block;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            }
+
+            .stat-label {
+            color: var(--gray-200);
+            color: #666;
+            }
+
+        /* Accordion */
+        .accordion-button {font-weight:700; color:var(--secondary);}
+        .accordion-button:not(.collapsed) {background:linear-gradient(135deg,var(--primary),var(--secondary)); color:white !important;}
+
+        footer {background:linear-gradient(135deg,var(--secondary),var(--primary)); color:white;}
+  
