@@ -112,3 +112,8 @@
 
         footer {background:linear-gradient(135deg,var(--secondary),var(--primary)); color:white;}
   
+@media  (max-width:992px) {
+        .about-grid {
+            grid-template-columns: 1fr;
+        }
+    }

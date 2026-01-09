@@ -166,10 +166,10 @@
     <div class="container">
         <h2 class="text-center section-title mb-5">بعض التكوينات الخاصة بالحاضنة</h2>
         <div class="row">
+            <div class="col-md-4 mb-4"><div class="card"><img src="./image/training two.jpg" class="card-img-top" alt=""><div class="card-body"><h5>  تكوينات في برمجة النموذج الأولى</h5></div></div></div>
             <div class="col-md-4 mb-4"><div class="card"><img src="./image/training 4.jpg" class="card-img-top" alt=""><div class="card-body"><h5> تكوينات في التسويق الإلكتروني</h5></div></div></div>
             <div class="col-md-4 mb-4"><div class="card"><img src="./image/training 3.jpg" class="card-img-top" alt=""><div class="card-body"><h5> تكوينات في المحاسبة</h5></div></div></div>
             <div class="col-md-4 mb-4"><div class="card"><img src="./image/training 4 (1).jpg" class="card-img-top" alt=""><div class="card-body"><h5>تكوينات في أساسيات التسويق  </h5></div></div></div>
-            <div class="col-md-4 mb-4"><div class="card"><img src="./image/training two.jpg" class="card-img-top" alt=""><div class="card-body"><h5>  تكوينات في برمجة النموذج الأولى</h5></div></div></div>
             <div class="col-md-4 mb-4"><div class="card"><img src="./image/training 1.jpg" class="card-img-top" alt=""><div class="card-body"><h5> تكوينات في مهارات الناعمة</h5></div></div></div>
             <div class="col-md-4 mb-4"><div class="card"><img src="./image/training 6.jpg" class="card-img-top" alt=""><div class="card-body"><h5> تكوينات في التسويق الإستراتيحي</h5></div></div></div>
         </div>
@@ -218,35 +218,38 @@
         <h2 class="text-center section-title mb-5">سجل مشروعك الآن</h2>
         <div class="card mx-auto" style="max-width:900px;">
             <div class="card-body p-5">
-                <form id="registerForm">
-                    <div class="row g-4">
-                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="الاسم الكامل" required></div>
-                        <div class="col-md-6"><input type="email" class="form-control form-control-lg" placeholder="البريد الإلكتروني" required></div>
-                        <div class="col-md-6"><input type="tel" class="form-control form-control-lg" placeholder="رقم الهاتف" required></div>
-                        <div class="col-md-6">
-                            <select class="form-select form-select-lg" required>
-                                <option value=""> سنة الجامعية</option>
-                                <option> السنة الثالثة ليسانس</option>
-                                <option> الماستر 2 </option>
-                            </select>
-                        </div>
-                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="الكلية"required></div>
-                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="التخصص"required></div>
-                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="الأستاذ المشرف" required></div>
-                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="الأستاذ المساعد إن وجد" ></div>
-                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="الإسم الكامل لطالب الثاني إن وجد" ></div>
-                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="الإسم الكامل لطالب الثالث إن وجد" ></div>
-                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="الإسم الكامل لطالب الرابع إن وجد" ></div>
-                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="الإسم الكامل لطالب الخامس إن وجد" ></div>
-                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="اسم المشروع" required></div>
-                        <div class="col-md-6"><input type="text" class="form-control form-control-lg" placeholder="مجال المشروع" required></div>
-                        <div class="col-12"><textarea class="form-control form-control-lg" rows="5" placeholder="وصف المشروع" required></textarea></div>
-                        <div class="col-12 text-center">
-                            <button type="submit" class="btn btn-primary btn-lg px-5" style="background:linear-gradient(135deg,var(--primary),var(--secondary)); border:none;">
-                                إرسال الطلب
-                            </button>
-                        </div>
-                    </div>
+                <form id="registerForm" method="POST">
+    <div class="row g-4">
+        <div class="col-md-6"><input type="text" name="الاسم الكامل" class="form-control form-control-lg" placeholder="الاسم الكامل" required></div>
+        <div class="col-md-6"><input type="email" name="البريد الإلكتروني" class="form-control form-control-lg" placeholder="البريد الإلكتروني" required></div>
+        <div class="col-md-6"><input type="tel" name="الهاتف" class="form-control form-control-lg" placeholder="رقم الهاتف" required></div>
+        <div class="col-md-6">
+            <select name="السنة الجامعية" class="form-select form-select-lg" required>
+                <option value=""> سنة الجامعية</option>
+                <option value="السنة الثالثة ليسانس"> السنة الثالثة ليسانس</option>
+                <option value="الماستر 2"> الماستر 2 </option>
+            </select>
+        </div>
+        <div class="col-md-6"><input type="text" name="الكلية" class="form-control form-control-lg" placeholder="الكلية" required></div>
+        <div class="col-md-6"><input type="text" name="التخصص" class="form-control form-control-lg" placeholder="التخصص" required></div>
+        <div class="col-md-6"><input type="text" name="المشرف" class="form-control form-control-lg" placeholder="الأستاذ المشرف" required></div>
+        <div class="col-md-6"><input type="text" name="المساعد" class="form-control form-control-lg" placeholder="الأستاذ المساعد إن وجد"></div>
+        
+        <div class="col-md-6"><input type="text" name="الطالب الثاني" class="form-control form-control-lg" placeholder="الإسم الكامل لطالب الثاني إن وجد"></div>
+        <div class="col-md-6"><input type="text" name="الطالب الثالث" class="form-control form-control-lg" placeholder="الإسم الكامل لطالب الثالث إن وجد"></div>
+        <div class="col-md-6"><input type="text" name="الطالب الرابع" class="form-control form-control-lg" placeholder="الإسم الكامل لطالب الرابع إن وجد"></div>
+        <div class="col-md-6"><input type="text" name="الطالب الخامس" class="form-control form-control-lg" placeholder="الإسم الكامل لطالب الخامس إن وجد"></div>
+        
+        <div class="col-md-6"><input type="text" name="اسم المشروع" class="form-control form-control-lg" placeholder="اسم المشروع" required></div>
+        <div class="col-md-6"><input type="text" name="مجال المشروع" class="form-control form-control-lg" placeholder="مجال المشروع" required></div>
+        <div class="col-12"><textarea name="وصف المشروع" class="form-control form-control-lg" rows="5" placeholder="وصف المشروع" required></textarea></div>
+        
+        <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary btn-lg px-5" style="background:linear-gradient(135deg,var(--primary),var(--secondary)); border:none;">
+                إرسال الطلب
+            </button>
+        </div>
+    </div>
                 </form>
                 <div id="successMsg" class="alert alert-success text-center fs-4 mt-4" style="display:none;">
                     شكراً! تم استلام طلبك وسيتم التواصل معك قريباً.
@@ -288,11 +291,31 @@
         localStorage.setItem('darkMode', document.body.classList.contains('dark-mode')?'enabled':'disabled');
     });
 
-    // Registration Success
-    document.getElementById('registerForm').addEventListener('submit', function(e){
-        e.preventDefault();
-        this.style.display='none';
-        document.getElementById('successMsg').style.display='block';
+    // Form Submission to Google Sheets
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyMxE-i_D4pQWnicypRWGgFD39KLMkFa7HRXqs76cY7zeEDvH-sWMfT6SCvnPhFlrN40A/exec';
+    const form = document.forms['registerForm'];
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      
+      // تغيير زر الإرسال لإظهار التحميل (اختياري)
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalText = submitBtn.innerHTML;
+      submitBtn.innerHTML = 'جاري الإرسال...';
+      submitBtn.disabled = true;
+
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            // إخفاء النموذج وإظهار رسالة النجاح
+            form.style.display = 'none';
+            document.getElementById('successMsg').style.display = 'block';
+        })
+        .catch(error => {
+            console.error('Error!', error.message);
+            alert('حدث خطأ أثناء الإرسال، يرجى المحاولة مرة أخرى.');
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+        });
     });
 </script>
 </body>
